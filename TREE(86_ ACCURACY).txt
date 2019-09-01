@@ -1,0 +1,1288 @@
+present_days <= 3
+|   access <= 15: PASS (47318.0/3205.0)
+|   access > 15
+|   |   video <= 20
+|   |   |   proccess_period <= 0.180116: PASS (2062.0/234.0)
+|   |   |   proccess_period > 0.180116
+|   |   |   |   Days Spent  <= 13
+|   |   |   |   |   problem <= 1: PASS (1893.0/310.0)
+|   |   |   |   |   problem > 1
+|   |   |   |   |   |   present_days <= 2
+|   |   |   |   |   |   |   page_close <= 16
+|   |   |   |   |   |   |   |   discussion <= 6
+|   |   |   |   |   |   |   |   |   discussion <= 3
+|   |   |   |   |   |   |   |   |   |   wiki <= 2
+|   |   |   |   |   |   |   |   |   |   |   discussion <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   access <= 32: PASS (812.0/153.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   access > 32
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 36
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   present_days <= 1:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   present_days > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 3:  FAIL (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 3:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   video <= 15: PASS (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   video > 15:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 2: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 5:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 1: PASS (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 36: PASS (126.0/28.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 4: PASS (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wiki > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 0: PASS (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 22: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 22
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 12: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   problem > 12:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 2:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 10: PASS (26.0)
+|   |   |   |   |   |   |   |   |   |   |   discussion > 2: PASS (108.0/12.0)
+|   |   |   |   |   |   |   |   |   |   wiki > 2
+|   |   |   |   |   |   |   |   |   |   |   problem <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   video <= 13: PASS (34.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   video > 13:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   problem > 8
+|   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 1.518611:  FAIL (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   effective_time > 1.518611
+|   |   |   |   |   |   |   |   |   |   |   |   |   access <= 37
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 9:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   problem > 9: PASS (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   access > 37:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   discussion > 3
+|   |   |   |   |   |   |   |   |   |   wiki <= 3
+|   |   |   |   |   |   |   |   |   |   |   navigate <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   present_days <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 11:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   problem > 11: PASS (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   present_days > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 0: PASS (40.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 1.245556: PASS (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 1.245556
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 7: PASS (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 7:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   navigate > 7
+|   |   |   |   |   |   |   |   |   |   |   |   present_days <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 1:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 1: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 2:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   present_days > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 5: PASS (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   problem > 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 5: PASS (54.0/20.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 0:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period <= 0.982245:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period > 0.982245
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 5.771389: PASS (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 5.771389:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 2:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   wiki > 3: PASS (14.0)
+|   |   |   |   |   |   |   |   discussion > 6
+|   |   |   |   |   |   |   |   |   user_enroll <= 1: PASS (156.0/16.0)
+|   |   |   |   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   |   |   |   effective_time <= 13.856667
+|   |   |   |   |   |   |   |   |   |   |   present_days <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   access <= 18:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   access > 18: PASS (17.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   present_days > 1: PASS (107.0/15.0)
+|   |   |   |   |   |   |   |   |   |   effective_time > 13.856667
+|   |   |   |   |   |   |   |   |   |   |   user_enroll <= 5:  FAIL (6.0)
+|   |   |   |   |   |   |   |   |   |   |   user_enroll > 5: PASS (2.0)
+|   |   |   |   |   |   |   page_close > 16
+|   |   |   |   |   |   |   |   discussion <= 0
+|   |   |   |   |   |   |   |   |   present_days <= 1
+|   |   |   |   |   |   |   |   |   |   page_close <= 28
+|   |   |   |   |   |   |   |   |   |   |   page_close <= 22
+|   |   |   |   |   |   |   |   |   |   |   |   access <= 25:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   access > 25: PASS (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   page_close > 22:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   page_close > 28: PASS (5.0)
+|   |   |   |   |   |   |   |   |   present_days > 1
+|   |   |   |   |   |   |   |   |   |   video <= 2
+|   |   |   |   |   |   |   |   |   |   |   effective_time <= 0.852778: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   effective_time > 0.852778:  FAIL (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   video > 2: PASS (138.0/46.0)
+|   |   |   |   |   |   |   |   discussion > 0
+|   |   |   |   |   |   |   |   |   present_days <= 1
+|   |   |   |   |   |   |   |   |   |   access <= 25:  FAIL (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   access > 25: PASS (34.0/2.0)
+|   |   |   |   |   |   |   |   |   present_days > 1: PASS (316.0/77.0)
+|   |   |   |   |   |   present_days > 2
+|   |   |   |   |   |   |   access <= 29
+|   |   |   |   |   |   |   |   Days Spent  <= 8: PASS (450.0/98.0)
+|   |   |   |   |   |   |   |   Days Spent  > 8
+|   |   |   |   |   |   |   |   |   proccess_period <= 8.974572
+|   |   |   |   |   |   |   |   |   |   wiki <= 0:  FAIL (8.0)
+|   |   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   |   proccess_period <= 8.573738: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   proccess_period > 8.573738:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   proccess_period > 8.974572
+|   |   |   |   |   |   |   |   |   |   Days Spent  <= 10
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 9
+|   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 0.749444:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   effective_time > 0.749444
+|   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 11: PASS (19.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   problem > 11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 22:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 22: PASS (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  > 9
+|   |   |   |   |   |   |   |   |   |   |   |   access <= 27
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 19
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 10: PASS (16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 1.222222
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 12: PASS (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 12:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 1.222222: PASS (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 1:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 19:  FAIL (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   access > 27:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   Days Spent  > 10: PASS (108.0/24.0)
+|   |   |   |   |   |   |   access > 29: PASS (853.0/295.0)
+|   |   |   |   Days Spent  > 13
+|   |   |   |   |   access <= 59
+|   |   |   |   |   |   present_days <= 2
+|   |   |   |   |   |   |   Days Spent  <= 22
+|   |   |   |   |   |   |   |   wiki <= 2
+|   |   |   |   |   |   |   |   |   video <= 2
+|   |   |   |   |   |   |   |   |   |   navigate <= 14
+|   |   |   |   |   |   |   |   |   |   |   user_enroll <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   discussion <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 3: PASS (17.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   video <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 33
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 7:  FAIL (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 7: PASS (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 33: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 8: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   video > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 15: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 15:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 2: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period <= 15.969051:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period > 15.969051: PASS (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 11:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   discussion > 2: PASS (18.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   user_enroll > 4
+|   |   |   |   |   |   |   |   |   |   |   |   video <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 0.169722:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 0.169722: PASS (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   video > 0:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   navigate > 14:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   video > 2
+|   |   |   |   |   |   |   |   |   |   wiki <= 0: PASS (156.0/24.0)
+|   |   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   |   problem <= 24: PASS (64.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   problem > 24
+|   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 5.688889: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   effective_time > 5.688889:  FAIL (5.0)
+|   |   |   |   |   |   |   |   wiki > 2
+|   |   |   |   |   |   |   |   |   user_enroll <= 2
+|   |   |   |   |   |   |   |   |   |   discussion <= 28: PASS (22.0/4.0)
+|   |   |   |   |   |   |   |   |   |   discussion > 28:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   user_enroll > 2
+|   |   |   |   |   |   |   |   |   |   problem <= 31:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   problem > 31: PASS (2.0)
+|   |   |   |   |   |   |   Days Spent  > 22
+|   |   |   |   |   |   |   |   effective_time <= 7.227222
+|   |   |   |   |   |   |   |   |   user_enroll <= 4
+|   |   |   |   |   |   |   |   |   |   discussion <= 3
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 27: PASS (41.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  > 27:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   discussion > 3
+|   |   |   |   |   |   |   |   |   |   |   page_close <= 6: PASS (5.0)
+|   |   |   |   |   |   |   |   |   |   |   page_close > 6
+|   |   |   |   |   |   |   |   |   |   |   |   navigate <= 3: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   navigate > 3:  FAIL (9.0/1.0)
+|   |   |   |   |   |   |   |   |   user_enroll > 4
+|   |   |   |   |   |   |   |   |   |   proccess_period <= 27.114676:  FAIL (6.0)
+|   |   |   |   |   |   |   |   |   |   proccess_period > 27.114676: PASS (3.0)
+|   |   |   |   |   |   |   |   effective_time > 7.227222:  FAIL (8.0/1.0)
+|   |   |   |   |   |   present_days > 2
+|   |   |   |   |   |   |   user_enroll <= 7
+|   |   |   |   |   |   |   |   problem <= 7: PASS (393.0/105.0)
+|   |   |   |   |   |   |   |   problem > 7
+|   |   |   |   |   |   |   |   |   page_close <= 26
+|   |   |   |   |   |   |   |   |   |   video <= 6
+|   |   |   |   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   access <= 41
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 9
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 0: PASS (56.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 7:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 7: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 6:  FAIL (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 17:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 17: PASS (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 5:  FAIL (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 9: PASS (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   access > 41:  FAIL (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 14: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 14:  FAIL (36.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   wiki > 1
+|   |   |   |   |   |   |   |   |   |   |   |   navigate <= 22
+|   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 24
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 4.386944: PASS (21.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 4.386944
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 21: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 21:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 7: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 24:  FAIL (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   navigate > 22:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   video > 6
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 21
+|   |   |   |   |   |   |   |   |   |   |   |   discussion <= 14: PASS (122.0/29.0)
+|   |   |   |   |   |   |   |   |   |   |   |   discussion > 14
+|   |   |   |   |   |   |   |   |   |   |   |   |   video <= 8: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   video > 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 3.666667:  FAIL (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 3.666667: PASS (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  > 21
+|   |   |   |   |   |   |   |   |   |   |   |   access <= 38
+|   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 1.5025
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 20: PASS (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 20:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 1.5025
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   video <= 11:  FAIL (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   video > 11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 1:  FAIL (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 1: PASS (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 5:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   access > 38
+|   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 23
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 22: PASS (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 22:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 23: PASS (8.0)
+|   |   |   |   |   |   |   |   |   page_close > 26
+|   |   |   |   |   |   |   |   |   |   wiki <= 2
+|   |   |   |   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   problem <= 12: PASS (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   problem > 12
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 0:  FAIL (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 53:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 53: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   wiki > 1:  FAIL (6.0)
+|   |   |   |   |   |   |   |   |   |   wiki > 2: PASS (7.0/1.0)
+|   |   |   |   |   |   |   user_enroll > 7
+|   |   |   |   |   |   |   |   video <= 1:  FAIL (10.0)
+|   |   |   |   |   |   |   |   video > 1
+|   |   |   |   |   |   |   |   |   page_close <= 6: PASS (7.0)
+|   |   |   |   |   |   |   |   |   page_close > 6
+|   |   |   |   |   |   |   |   |   |   problem <= 14
+|   |   |   |   |   |   |   |   |   |   |   navigate <= 12
+|   |   |   |   |   |   |   |   |   |   |   |   page_close <= 9:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   page_close > 9
+|   |   |   |   |   |   |   |   |   |   |   |   |   access <= 24
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   video <= 6: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   video > 6:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   access > 24: PASS (8.0)
+|   |   |   |   |   |   |   |   |   |   |   navigate > 12:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   problem > 14:  FAIL (9.0/1.0)
+|   |   |   |   |   access > 59
+|   |   |   |   |   |   present_days <= 2
+|   |   |   |   |   |   |   Days Spent  <= 17
+|   |   |   |   |   |   |   |   page_close <= 5: PASS (2.0)
+|   |   |   |   |   |   |   |   page_close > 5:  FAIL (5.0)
+|   |   |   |   |   |   |   Days Spent  > 17: PASS (5.0)
+|   |   |   |   |   |   present_days > 2
+|   |   |   |   |   |   |   Days Spent  <= 24
+|   |   |   |   |   |   |   |   wiki <= 5
+|   |   |   |   |   |   |   |   |   access <= 60:  FAIL (6.0)
+|   |   |   |   |   |   |   |   |   access > 60
+|   |   |   |   |   |   |   |   |   |   discussion <= 32
+|   |   |   |   |   |   |   |   |   |   |   video <= 9
+|   |   |   |   |   |   |   |   |   |   |   |   discussion <= 17
+|   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 62: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 62:  FAIL (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 2:  FAIL (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   discussion > 17
+|   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 1:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 1: PASS (5.0)
+|   |   |   |   |   |   |   |   |   |   |   video > 9
+|   |   |   |   |   |   |   |   |   |   |   |   access <= 106: PASS (29.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   access > 106:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   discussion > 32:  FAIL (5.0)
+|   |   |   |   |   |   |   |   wiki > 5:  FAIL (4.0)
+|   |   |   |   |   |   |   Days Spent  > 24:  FAIL (7.0)
+|   |   video > 20
+|   |   |   present_days <= 1: PASS (93.0/16.0)
+|   |   |   present_days > 1
+|   |   |   |   page_close <= 38
+|   |   |   |   |   present_days <= 2
+|   |   |   |   |   |   user_enroll <= 1: PASS (89.0/24.0)
+|   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   page_close <= 12: PASS (19.0/2.0)
+|   |   |   |   |   |   |   page_close > 12
+|   |   |   |   |   |   |   |   Days Spent  <= 21
+|   |   |   |   |   |   |   |   |   problem <= 74
+|   |   |   |   |   |   |   |   |   |   wiki <= 4
+|   |   |   |   |   |   |   |   |   |   |   problem <= 20
+|   |   |   |   |   |   |   |   |   |   |   |   discussion <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 3: PASS (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 3:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 2: PASS (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 0:  FAIL (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   discussion > 4: PASS (9.0)
+|   |   |   |   |   |   |   |   |   |   |   problem > 20
+|   |   |   |   |   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period <= 1.044942: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period > 1.044942:  FAIL (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wiki > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 15: PASS (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 15:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   wiki > 4:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   problem > 74: PASS (6.0)
+|   |   |   |   |   |   |   |   Days Spent  > 21:  FAIL (4.0)
+|   |   |   |   |   present_days > 2: PASS (280.0/112.0)
+|   |   |   |   page_close > 38
+|   |   |   |   |   problem <= 5
+|   |   |   |   |   |   user_enroll <= 5
+|   |   |   |   |   |   |   user_enroll <= 1
+|   |   |   |   |   |   |   |   video <= 25
+|   |   |   |   |   |   |   |   |   navigate <= 12:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   navigate > 12: PASS (3.0)
+|   |   |   |   |   |   |   |   video > 25:  FAIL (2.0)
+|   |   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   |   page_close <= 41
+|   |   |   |   |   |   |   |   |   access <= 62: PASS (2.0)
+|   |   |   |   |   |   |   |   |   access > 62:  FAIL (2.0)
+|   |   |   |   |   |   |   |   page_close > 41: PASS (16.0)
+|   |   |   |   |   |   user_enroll > 5:  FAIL (3.0)
+|   |   |   |   |   problem > 5
+|   |   |   |   |   |   present_days <= 2
+|   |   |   |   |   |   |   access <= 99
+|   |   |   |   |   |   |   |   user_enroll <= 1:  FAIL (16.0)
+|   |   |   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   |   |   user_enroll <= 2
+|   |   |   |   |   |   |   |   |   |   discussion <= 2:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   discussion > 2
+|   |   |   |   |   |   |   |   |   |   |   discussion <= 14: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   discussion > 14:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   user_enroll > 2:  FAIL (7.0/1.0)
+|   |   |   |   |   |   |   access > 99
+|   |   |   |   |   |   |   |   navigate <= 19
+|   |   |   |   |   |   |   |   |   navigate <= 7:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   navigate > 7
+|   |   |   |   |   |   |   |   |   |   user_enroll <= 1: PASS (6.0)
+|   |   |   |   |   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   |   |   |   |   problem <= 30:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   problem > 30: PASS (5.0)
+|   |   |   |   |   |   |   |   navigate > 19:  FAIL (5.0)
+|   |   |   |   |   |   present_days > 2:  FAIL (109.0/41.0)
+present_days > 3
+|   present_days <= 6
+|   |   problem <= 11
+|   |   |   proccess_period <= 20.46265
+|   |   |   |   page_close <= 37
+|   |   |   |   |   access <= 22
+|   |   |   |   |   |   Days Spent  <= 10: PASS (414.0/76.0)
+|   |   |   |   |   |   Days Spent  > 10
+|   |   |   |   |   |   |   present_days <= 4
+|   |   |   |   |   |   |   |   video <= 2
+|   |   |   |   |   |   |   |   |   wiki <= 0: PASS (130.0/38.0)
+|   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   problem <= 6
+|   |   |   |   |   |   |   |   |   |   |   discussion <= 35
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 3: PASS (25.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 2.776944:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 2.776944: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   discussion > 35:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   problem > 6:  FAIL (2.0)
+|   |   |   |   |   |   |   |   video > 2
+|   |   |   |   |   |   |   |   |   user_enroll <= 5: PASS (148.0/19.0)
+|   |   |   |   |   |   |   |   |   user_enroll > 5
+|   |   |   |   |   |   |   |   |   |   discussion <= 0
+|   |   |   |   |   |   |   |   |   |   |   problem <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 11:  FAIL (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 11: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   problem > 1: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   discussion > 0: PASS (7.0)
+|   |   |   |   |   |   |   present_days > 4
+|   |   |   |   |   |   |   |   video <= 8
+|   |   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   |   problem <= 7
+|   |   |   |   |   |   |   |   |   |   |   present_days <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   navigate <= 15: PASS (61.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   navigate > 15
+|   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 4:  FAIL (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 13:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 13: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   present_days > 5
+|   |   |   |   |   |   |   |   |   |   |   |   page_close <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 8: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 8:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   page_close > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 11: PASS (24.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 13:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 13: PASS (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   problem > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 3: PASS (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 3:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   problem > 7
+|   |   |   |   |   |   |   |   |   |   |   video <= 2:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   video > 2: PASS (3.0/1.0)
+|   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   present_days <= 5: PASS (30.0/4.0)
+|   |   |   |   |   |   |   |   |   |   present_days > 5
+|   |   |   |   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   navigate <= 16:  FAIL (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   navigate > 16: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   wiki > 1: PASS (9.0/1.0)
+|   |   |   |   |   |   |   |   video > 8
+|   |   |   |   |   |   |   |   |   navigate <= 7
+|   |   |   |   |   |   |   |   |   |   Days Spent  <= 18: PASS (6.0)
+|   |   |   |   |   |   |   |   |   |   Days Spent  > 18:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   |   |   navigate > 7
+|   |   |   |   |   |   |   |   |   |   access <= 20:  FAIL (7.0)
+|   |   |   |   |   |   |   |   |   |   access > 20
+|   |   |   |   |   |   |   |   |   |   |   access <= 21: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   access > 21:  FAIL (2.0)
+|   |   |   |   |   access > 22
+|   |   |   |   |   |   user_enroll <= 6
+|   |   |   |   |   |   |   Days Spent  <= 10
+|   |   |   |   |   |   |   |   effective_time <= 6.076667: PASS (335.0/68.0)
+|   |   |   |   |   |   |   |   effective_time > 6.076667
+|   |   |   |   |   |   |   |   |   Days Spent  <= 6
+|   |   |   |   |   |   |   |   |   |   present_days <= 5
+|   |   |   |   |   |   |   |   |   |   |   present_days <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 41
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   video <= 8:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   video > 8: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 41:  FAIL (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 0: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 1: PASS (38.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 9: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 9:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   video <= 12
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 40: PASS (18.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 40
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 6: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 22:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 22: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 5:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   video > 12: PASS (18.0)
+|   |   |   |   |   |   |   |   |   |   |   present_days > 4
+|   |   |   |   |   |   |   |   |   |   |   |   wiki <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   video <= 2: PASS (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   video > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 58
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 1:  FAIL (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   video <= 17
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 10:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 5: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   problem > 5:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   video > 17: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 5: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 58: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   problem > 7: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 0: PASS (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 1:  FAIL (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wiki > 3: PASS (5.0)
+|   |   |   |   |   |   |   |   |   |   present_days > 5: PASS (12.0/1.0)
+|   |   |   |   |   |   |   |   |   Days Spent  > 6: PASS (231.0/89.0)
+|   |   |   |   |   |   |   Days Spent  > 10
+|   |   |   |   |   |   |   |   wiki <= 5
+|   |   |   |   |   |   |   |   |   Days Spent  <= 19: PASS (887.0/311.0)
+|   |   |   |   |   |   |   |   |   Days Spent  > 19
+|   |   |   |   |   |   |   |   |   |   wiki <= 2
+|   |   |   |   |   |   |   |   |   |   |   access <= 24:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   access > 24
+|   |   |   |   |   |   |   |   |   |   |   |   navigate <= 18: PASS (28.0)
+|   |   |   |   |   |   |   |   |   |   |   |   navigate > 18
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 8.691389:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 8.691389: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 1: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   wiki > 2
+|   |   |   |   |   |   |   |   |   |   |   wiki <= 4:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   wiki > 4: PASS (2.0)
+|   |   |   |   |   |   |   |   wiki > 5
+|   |   |   |   |   |   |   |   |   problem <= 7
+|   |   |   |   |   |   |   |   |   |   user_enroll <= 1
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 14
+|   |   |   |   |   |   |   |   |   |   |   |   wiki <= 6:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wiki > 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 16: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 16
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   present_days <= 5: PASS (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   present_days > 5:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  > 14: PASS (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   |   |   |   |   user_enroll <= 2:  FAIL (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   user_enroll > 2
+|   |   |   |   |   |   |   |   |   |   |   |   problem <= 4: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   problem > 4:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   |   |   problem > 7
+|   |   |   |   |   |   |   |   |   |   navigate <= 22:  FAIL (10.0)
+|   |   |   |   |   |   |   |   |   |   navigate > 22
+|   |   |   |   |   |   |   |   |   |   |   page_close <= 18:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   page_close > 18: PASS (2.0)
+|   |   |   |   |   |   user_enroll > 6
+|   |   |   |   |   |   |   present_days <= 5
+|   |   |   |   |   |   |   |   present_days <= 4
+|   |   |   |   |   |   |   |   |   Days Spent  <= 15
+|   |   |   |   |   |   |   |   |   |   Days Spent  <= 12
+|   |   |   |   |   |   |   |   |   |   |   page_close <= 29: PASS (29.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   page_close > 29:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Days Spent  > 12
+|   |   |   |   |   |   |   |   |   |   |   page_close <= 28
+|   |   |   |   |   |   |   |   |   |   |   |   access <= 46:  FAIL (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   access > 46
+|   |   |   |   |   |   |   |   |   |   |   |   |   access <= 53: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   access > 53:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   page_close > 28: PASS (2.0)
+|   |   |   |   |   |   |   |   |   Days Spent  > 15: PASS (7.0/1.0)
+|   |   |   |   |   |   |   |   present_days > 4:  FAIL (33.0/13.0)
+|   |   |   |   |   |   |   present_days > 5
+|   |   |   |   |   |   |   |   navigate <= 8:  FAIL (3.0)
+|   |   |   |   |   |   |   |   navigate > 8: PASS (21.0/4.0)
+|   |   |   |   page_close > 37
+|   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   user_enroll <= 3
+|   |   |   |   |   |   |   present_days <= 4: PASS (27.0/13.0)
+|   |   |   |   |   |   |   present_days > 4
+|   |   |   |   |   |   |   |   Days Spent  <= 19
+|   |   |   |   |   |   |   |   |   user_enroll <= 1
+|   |   |   |   |   |   |   |   |   |   present_days <= 5
+|   |   |   |   |   |   |   |   |   |   |   effective_time <= 14.300833: PASS (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   effective_time > 14.300833:  FAIL (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   present_days > 5
+|   |   |   |   |   |   |   |   |   |   |   page_close <= 45: PASS (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   page_close > 45:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   |   |   |   navigate <= 13
+|   |   |   |   |   |   |   |   |   |   |   discussion <= 0:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   discussion > 0
+|   |   |   |   |   |   |   |   |   |   |   |   discussion <= 3: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   discussion > 3:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   navigate > 13:  FAIL (10.0)
+|   |   |   |   |   |   |   |   Days Spent  > 19: PASS (3.0)
+|   |   |   |   |   |   user_enroll > 3
+|   |   |   |   |   |   |   navigate <= 16:  FAIL (11.0)
+|   |   |   |   |   |   |   navigate > 16
+|   |   |   |   |   |   |   |   page_close <= 45: PASS (4.0/1.0)
+|   |   |   |   |   |   |   |   page_close > 45:  FAIL (2.0)
+|   |   |   |   |   wiki > 0
+|   |   |   |   |   |   wiki <= 6
+|   |   |   |   |   |   |   video <= 19: PASS (46.0/10.0)
+|   |   |   |   |   |   |   video > 19
+|   |   |   |   |   |   |   |   discussion <= 3
+|   |   |   |   |   |   |   |   |   problem <= 4
+|   |   |   |   |   |   |   |   |   |   Days Spent  <= 12
+|   |   |   |   |   |   |   |   |   |   |   discussion <= 1: PASS (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   discussion > 1:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Days Spent  > 12:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   problem > 4:  FAIL (11.0)
+|   |   |   |   |   |   |   |   discussion > 3
+|   |   |   |   |   |   |   |   |   discussion <= 24: PASS (28.0/6.0)
+|   |   |   |   |   |   |   |   |   discussion > 24
+|   |   |   |   |   |   |   |   |   |   present_days <= 5:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   present_days > 5
+|   |   |   |   |   |   |   |   |   |   |   navigate <= 24: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   navigate > 24:  FAIL (5.0/1.0)
+|   |   |   |   |   |   wiki > 6:  FAIL (8.0/1.0)
+|   |   |   proccess_period > 20.46265
+|   |   |   |   present_days <= 4
+|   |   |   |   |   wiki <= 2
+|   |   |   |   |   |   discussion <= 8: PASS (321.0/104.0)
+|   |   |   |   |   |   discussion > 8:  FAIL (31.0/14.0)
+|   |   |   |   |   wiki > 2
+|   |   |   |   |   |   navigate <= 15:  FAIL (6.0)
+|   |   |   |   |   |   navigate > 15
+|   |   |   |   |   |   |   user_enroll <= 2
+|   |   |   |   |   |   |   |   effective_time <= 2.824444:  FAIL (10.0/1.0)
+|   |   |   |   |   |   |   |   effective_time > 2.824444
+|   |   |   |   |   |   |   |   |   user_enroll <= 1: PASS (8.0/2.0)
+|   |   |   |   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   |   |   |   discussion <= 8: PASS (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   discussion > 8:  FAIL (3.0)
+|   |   |   |   |   |   |   user_enroll > 2: PASS (8.0/1.0)
+|   |   |   |   present_days > 4
+|   |   |   |   |   page_close <= 24
+|   |   |   |   |   |   Days Spent  <= 26
+|   |   |   |   |   |   |   Days Spent  <= 20:  FAIL (51.0/20.0)
+|   |   |   |   |   |   |   Days Spent  > 20: PASS (312.0/127.0)
+|   |   |   |   |   |   Days Spent  > 26
+|   |   |   |   |   |   |   user_enroll <= 15
+|   |   |   |   |   |   |   |   present_days <= 5
+|   |   |   |   |   |   |   |   |   problem <= 7
+|   |   |   |   |   |   |   |   |   |   navigate <= 13
+|   |   |   |   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 27
+|   |   |   |   |   |   |   |   |   |   |   |   |   video <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   video <= 3:  FAIL (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   video > 3: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   video > 6:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 27: PASS (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   wiki > 0:  FAIL (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   navigate > 13: PASS (10.0/1.0)
+|   |   |   |   |   |   |   |   |   problem > 7:  FAIL (7.0/1.0)
+|   |   |   |   |   |   |   |   present_days > 5
+|   |   |   |   |   |   |   |   |   video <= 13
+|   |   |   |   |   |   |   |   |   |   page_close <= 7
+|   |   |   |   |   |   |   |   |   |   |   problem <= 1: PASS (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   problem > 1:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   page_close > 7
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 27:  FAIL (10.0)
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  > 27
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 1: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 1:  FAIL (7.0/1.0)
+|   |   |   |   |   |   |   |   |   video > 13: PASS (5.0)
+|   |   |   |   |   |   |   user_enroll > 15:  FAIL (5.0)
+|   |   |   |   |   page_close > 24
+|   |   |   |   |   |   user_enroll <= 4
+|   |   |   |   |   |   |   video <= 36
+|   |   |   |   |   |   |   |   wiki <= 4
+|   |   |   |   |   |   |   |   |   navigate <= 29
+|   |   |   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   |   |   present_days <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 10.446944: PASS (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 10.446944:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 23
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 50:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 50: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 23:  FAIL (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 2: PASS (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   present_days > 5
+|   |   |   |   |   |   |   |   |   |   |   |   problem <= 1:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   problem > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period <= 24.609583
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 21
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 51: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 51:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 21:  FAIL (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period > 24.609583
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 21: PASS (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 21:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   |   navigate <= 16:  FAIL (22.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   navigate > 16
+|   |   |   |   |   |   |   |   |   |   |   |   navigate <= 26
+|   |   |   |   |   |   |   |   |   |   |   |   |   present_days <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 2:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 2: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   present_days > 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 26:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 26
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 8.788611: PASS (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 8.788611:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   navigate > 26:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   navigate > 29: PASS (8.0/1.0)
+|   |   |   |   |   |   |   |   wiki > 4
+|   |   |   |   |   |   |   |   |   discussion <= 22:  FAIL (11.0)
+|   |   |   |   |   |   |   |   |   discussion > 22
+|   |   |   |   |   |   |   |   |   |   Days Spent  <= 23:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   Days Spent  > 23: PASS (2.0)
+|   |   |   |   |   |   |   video > 36: PASS (7.0/1.0)
+|   |   |   |   |   |   user_enroll > 4
+|   |   |   |   |   |   |   problem <= 4:  FAIL (13.0)
+|   |   |   |   |   |   |   problem > 4
+|   |   |   |   |   |   |   |   discussion <= 5: PASS (2.0)
+|   |   |   |   |   |   |   |   discussion > 5:  FAIL (7.0/1.0)
+|   |   problem > 11
+|   |   |   page_close <= 47
+|   |   |   |   Days Spent  <= 18
+|   |   |   |   |   access <= 181
+|   |   |   |   |   |   problem <= 54
+|   |   |   |   |   |   |   page_close <= 28
+|   |   |   |   |   |   |   |   navigate <= 22
+|   |   |   |   |   |   |   |   |   video <= 0
+|   |   |   |   |   |   |   |   |   |   navigate <= 16
+|   |   |   |   |   |   |   |   |   |   |   wiki <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   present_days <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 4: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period <= 11.347998
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 15: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   problem > 15:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 1: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period > 11.347998:  FAIL (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   present_days > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period <= 17.619514:  FAIL (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period > 17.619514: PASS (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   present_days <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 7: PASS (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 7:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 3:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   present_days > 5: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wiki > 1:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   wiki > 3: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   navigate > 16:  FAIL (13.0/1.0)
+|   |   |   |   |   |   |   |   |   video > 0
+|   |   |   |   |   |   |   |   |   |   video <= 28
+|   |   |   |   |   |   |   |   |   |   |   user_enroll <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   wiki <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 15
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 9
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 14: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   problem > 14:  FAIL (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 6: PASS (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 38
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   video <= 7: PASS (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   video > 7:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 38: PASS (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 6:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 6: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 3: PASS (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 0: PASS (27.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 11:  FAIL (56.0/25.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 3.220556
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 14: PASS (12.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 14:  FAIL (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 3.220556:  FAIL (18.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 9: PASS (297.0/111.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 15: PASS (178.0/76.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wiki > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   access <= 25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 11: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 11:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   access > 25: PASS (31.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   user_enroll > 4
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 12:  FAIL (116.0/53.0)
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 12: PASS (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   video > 28
+|   |   |   |   |   |   |   |   |   |   |   navigate <= 11
+|   |   |   |   |   |   |   |   |   |   |   |   discussion <= 24:  FAIL (21.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   discussion > 24: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   navigate > 11
+|   |   |   |   |   |   |   |   |   |   |   |   problem <= 48
+|   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 22: PASS (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 22
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 18
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 7.303611:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 7.303611: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 18:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   problem > 48:  FAIL (3.0)
+|   |   |   |   |   |   |   |   navigate > 22
+|   |   |   |   |   |   |   |   |   user_enroll <= 1
+|   |   |   |   |   |   |   |   |   |   present_days <= 4
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 10
+|   |   |   |   |   |   |   |   |   |   |   |   navigate <= 30: PASS (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   navigate > 30:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  > 10
+|   |   |   |   |   |   |   |   |   |   |   |   access <= 55:  FAIL (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   access > 55
+|   |   |   |   |   |   |   |   |   |   |   |   |   video <= 16:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   video > 16: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   present_days > 4
+|   |   |   |   |   |   |   |   |   |   |   video <= 3:  FAIL (16.0)
+|   |   |   |   |   |   |   |   |   |   |   video > 3
+|   |   |   |   |   |   |   |   |   |   |   |   navigate <= 41
+|   |   |   |   |   |   |   |   |   |   |   |   |   access <= 56:  FAIL (21.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   access > 56
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 79
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 9:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 9: PASS (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 79:  FAIL (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   navigate > 41: PASS (3.0)
+|   |   |   |   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   |   |   |   Days Spent  <= 15
+|   |   |   |   |   |   |   |   |   |   |   present_days <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 9
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 24: PASS (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 24:  FAIL (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 9: PASS (11.0)
+|   |   |   |   |   |   |   |   |   |   |   present_days > 4
+|   |   |   |   |   |   |   |   |   |   |   |   discussion <= 0:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   discussion > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 47
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period <= 13.00838
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 8:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 8: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period > 13.00838:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 47: PASS (12.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 2: PASS (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 13:  FAIL (14.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 13: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   Days Spent  > 15:  FAIL (20.0/6.0)
+|   |   |   |   |   |   |   page_close > 28:  FAIL (388.0/159.0)
+|   |   |   |   |   |   problem > 54
+|   |   |   |   |   |   |   present_days <= 5
+|   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   present_days <= 4
+|   |   |   |   |   |   |   |   |   |   effective_time <= 3.741667
+|   |   |   |   |   |   |   |   |   |   |   user_enroll <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 1: PASS (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 31
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 6: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 6:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 31: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   user_enroll > 3: PASS (12.0)
+|   |   |   |   |   |   |   |   |   |   effective_time > 3.741667:  FAIL (52.0/25.0)
+|   |   |   |   |   |   |   |   |   present_days > 4
+|   |   |   |   |   |   |   |   |   |   navigate <= 17
+|   |   |   |   |   |   |   |   |   |   |   discussion <= 9
+|   |   |   |   |   |   |   |   |   |   |   |   access <= 134
+|   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   video <= 6:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   video > 6: PASS (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 1: PASS (18.0)
+|   |   |   |   |   |   |   |   |   |   |   |   access > 134:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   discussion > 9
+|   |   |   |   |   |   |   |   |   |   |   |   navigate <= 13:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   navigate > 13: PASS (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   navigate > 17
+|   |   |   |   |   |   |   |   |   |   |   problem <= 70: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   problem > 70
+|   |   |   |   |   |   |   |   |   |   |   |   discussion <= 11:  FAIL (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   discussion > 11
+|   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 12: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 12:  FAIL (2.0)
+|   |   |   |   |   |   |   |   wiki > 0: PASS (139.0/41.0)
+|   |   |   |   |   |   |   present_days > 5
+|   |   |   |   |   |   |   |   video <= 5:  FAIL (20.0/5.0)
+|   |   |   |   |   |   |   |   video > 5
+|   |   |   |   |   |   |   |   |   navigate <= 14
+|   |   |   |   |   |   |   |   |   |   page_close <= 11: PASS (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   page_close > 11
+|   |   |   |   |   |   |   |   |   |   |   user_enroll <= 2:  FAIL (11.0)
+|   |   |   |   |   |   |   |   |   |   |   user_enroll > 2
+|   |   |   |   |   |   |   |   |   |   |   |   discussion <= 5: PASS (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   discussion > 5:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   navigate > 14: PASS (48.0/13.0)
+|   |   |   |   |   access > 181
+|   |   |   |   |   |   page_close <= 37:  FAIL (19.0)
+|   |   |   |   |   |   page_close > 37
+|   |   |   |   |   |   |   present_days <= 5: PASS (5.0/1.0)
+|   |   |   |   |   |   |   present_days > 5:  FAIL (3.0)
+|   |   |   |   Days Spent  > 18
+|   |   |   |   |   present_days <= 5
+|   |   |   |   |   |   page_close <= 19
+|   |   |   |   |   |   |   access <= 66
+|   |   |   |   |   |   |   |   present_days <= 4
+|   |   |   |   |   |   |   |   |   page_close <= 18
+|   |   |   |   |   |   |   |   |   |   user_enroll <= 1:  FAIL (63.0/26.0)
+|   |   |   |   |   |   |   |   |   |   user_enroll > 1: PASS (84.0/33.0)
+|   |   |   |   |   |   |   |   |   page_close > 18:  FAIL (10.0/1.0)
+|   |   |   |   |   |   |   |   present_days > 4: PASS (142.0/71.0)
+|   |   |   |   |   |   |   access > 66
+|   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   access <= 138:  FAIL (52.0/9.0)
+|   |   |   |   |   |   |   |   |   access > 138: PASS (5.0/1.0)
+|   |   |   |   |   |   |   |   wiki > 1
+|   |   |   |   |   |   |   |   |   effective_time <= 5.261111: PASS (4.0)
+|   |   |   |   |   |   |   |   |   effective_time > 5.261111:  FAIL (33.0/10.0)
+|   |   |   |   |   |   page_close > 19
+|   |   |   |   |   |   |   present_days <= 4
+|   |   |   |   |   |   |   |   problem <= 89:  FAIL (170.0/57.0)
+|   |   |   |   |   |   |   |   problem > 89
+|   |   |   |   |   |   |   |   |   Days Spent  <= 24: PASS (8.0)
+|   |   |   |   |   |   |   |   |   Days Spent  > 24:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   present_days > 4:  FAIL (282.0/92.0)
+|   |   |   |   |   present_days > 5
+|   |   |   |   |   |   Days Spent  <= 23
+|   |   |   |   |   |   |   navigate <= 27
+|   |   |   |   |   |   |   |   video <= 4
+|   |   |   |   |   |   |   |   |   page_close <= 7
+|   |   |   |   |   |   |   |   |   |   problem <= 14:  FAIL (6.0)
+|   |   |   |   |   |   |   |   |   |   problem > 14
+|   |   |   |   |   |   |   |   |   |   |   effective_time <= 10.891667
+|   |   |   |   |   |   |   |   |   |   |   |   wiki <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 12: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 12:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 2:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 0: PASS (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wiki > 2:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   effective_time > 10.891667: PASS (4.0)
+|   |   |   |   |   |   |   |   |   page_close > 7
+|   |   |   |   |   |   |   |   |   |   wiki <= 2:  FAIL (24.0/1.0)
+|   |   |   |   |   |   |   |   |   |   wiki > 2
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 20:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  > 20: PASS (2.0)
+|   |   |   |   |   |   |   |   video > 4
+|   |   |   |   |   |   |   |   |   Days Spent  <= 21
+|   |   |   |   |   |   |   |   |   |   navigate <= 13
+|   |   |   |   |   |   |   |   |   |   |   access <= 57
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 19
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 35: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 35:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 19:  FAIL (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 6: PASS (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 5: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   access > 57: PASS (16.0/1.0)
+|   |   |   |   |   |   |   |   |   |   navigate > 13
+|   |   |   |   |   |   |   |   |   |   |   access <= 37: PASS (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   access > 37
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 19
+|   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 8.004444:  FAIL (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 8.004444
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 50:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 50
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 20: PASS (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 20
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 1: PASS (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 1:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 19
+|   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 20
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 42:  FAIL (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   problem > 42: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 20
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 17: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   problem > 17:  FAIL (12.0/1.0)
+|   |   |   |   |   |   |   |   |   Days Spent  > 21:  FAIL (77.0/31.0)
+|   |   |   |   |   |   |   navigate > 27
+|   |   |   |   |   |   |   |   page_close <= 20:  FAIL (21.0)
+|   |   |   |   |   |   |   |   page_close > 20
+|   |   |   |   |   |   |   |   |   navigate <= 54
+|   |   |   |   |   |   |   |   |   |   wiki <= 2
+|   |   |   |   |   |   |   |   |   |   |   navigate <= 28:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   navigate > 28
+|   |   |   |   |   |   |   |   |   |   |   |   discussion <= 13: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   discussion > 13:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   wiki > 2:  FAIL (11.0)
+|   |   |   |   |   |   |   |   |   navigate > 54: PASS (2.0)
+|   |   |   |   |   |   Days Spent  > 23
+|   |   |   |   |   |   |   Days Spent  <= 26
+|   |   |   |   |   |   |   |   proccess_period <= 27.079236
+|   |   |   |   |   |   |   |   |   Days Spent  <= 25:  FAIL (97.0/20.0)
+|   |   |   |   |   |   |   |   |   Days Spent  > 25
+|   |   |   |   |   |   |   |   |   |   video <= 2:  FAIL (6.0)
+|   |   |   |   |   |   |   |   |   |   video > 2
+|   |   |   |   |   |   |   |   |   |   |   page_close <= 18: PASS (8.0)
+|   |   |   |   |   |   |   |   |   |   |   page_close > 18
+|   |   |   |   |   |   |   |   |   |   |   |   wiki <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period <= 26.82412
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 55
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 2:  FAIL (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 2: PASS (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 55: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   proccess_period > 26.82412: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wiki > 2:  FAIL (3.0)
+|   |   |   |   |   |   |   |   proccess_period > 27.079236:  FAIL (11.0)
+|   |   |   |   |   |   |   Days Spent  > 26
+|   |   |   |   |   |   |   |   Days Spent  <= 27:  FAIL (56.0/7.0)
+|   |   |   |   |   |   |   |   Days Spent  > 27
+|   |   |   |   |   |   |   |   |   page_close <= 5: PASS (4.0)
+|   |   |   |   |   |   |   |   |   page_close > 5
+|   |   |   |   |   |   |   |   |   |   discussion <= 7:  FAIL (20.0/2.0)
+|   |   |   |   |   |   |   |   |   |   discussion > 7
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 28
+|   |   |   |   |   |   |   |   |   |   |   |   proccess_period <= 28.953877
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 12: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 12:  FAIL (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   proccess_period > 28.953877: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Days Spent  > 28: PASS (2.0)
+|   |   |   page_close > 47:  FAIL (679.0/155.0)
+|   present_days > 6
+|   |   Days Spent  <= 21
+|   |   |   page_close <= 51
+|   |   |   |   present_days <= 9
+|   |   |   |   |   access <= 40
+|   |   |   |   |   |   wiki <= 5
+|   |   |   |   |   |   |   video <= 7
+|   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   wiki <= 0: PASS (80.0/31.0)
+|   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   problem <= 1
+|   |   |   |   |   |   |   |   |   |   |   effective_time <= 4.052222: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   effective_time > 4.052222:  FAIL (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   problem > 1: PASS (12.0/1.0)
+|   |   |   |   |   |   |   |   wiki > 1
+|   |   |   |   |   |   |   |   |   problem <= 34
+|   |   |   |   |   |   |   |   |   |   Days Spent  <= 19: PASS (19.0)
+|   |   |   |   |   |   |   |   |   |   Days Spent  > 19
+|   |   |   |   |   |   |   |   |   |   |   discussion <= 9: PASS (7.0)
+|   |   |   |   |   |   |   |   |   |   |   discussion > 9:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   problem > 34:  FAIL (3.0)
+|   |   |   |   |   |   |   video > 7
+|   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   |   access <= 38
+|   |   |   |   |   |   |   |   |   |   |   user_enroll <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 16
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 6:  FAIL (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 6: PASS (13.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 16: PASS (11.0)
+|   |   |   |   |   |   |   |   |   |   |   user_enroll > 3
+|   |   |   |   |   |   |   |   |   |   |   |   proccess_period <= 18.824699
+|   |   |   |   |   |   |   |   |   |   |   |   |   access <= 36: PASS (12.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   access > 36:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   proccess_period > 18.824699:  FAIL (7.0)
+|   |   |   |   |   |   |   |   |   |   access > 38:  FAIL (12.0/3.0)
+|   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   access <= 28:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   access > 28
+|   |   |   |   |   |   |   |   |   |   |   present_days <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   problem <= 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 15
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 14:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 14: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   problem > 1: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 15:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   problem > 10: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   present_days > 7: PASS (5.0/1.0)
+|   |   |   |   |   |   |   |   wiki > 1
+|   |   |   |   |   |   |   |   |   navigate <= 13: PASS (3.0)
+|   |   |   |   |   |   |   |   |   navigate > 13
+|   |   |   |   |   |   |   |   |   |   discussion <= 45:  FAIL (16.0)
+|   |   |   |   |   |   |   |   |   |   discussion > 45: PASS (3.0/1.0)
+|   |   |   |   |   |   wiki > 5
+|   |   |   |   |   |   |   page_close <= 5: PASS (3.0)
+|   |   |   |   |   |   |   page_close > 5:  FAIL (12.0/1.0)
+|   |   |   |   |   access > 40
+|   |   |   |   |   |   Days Spent  <= 17
+|   |   |   |   |   |   |   wiki <= 6
+|   |   |   |   |   |   |   |   video <= 3:  FAIL (82.0/26.0)
+|   |   |   |   |   |   |   |   video > 3
+|   |   |   |   |   |   |   |   |   present_days <= 8
+|   |   |   |   |   |   |   |   |   |   user_enroll <= 6
+|   |   |   |   |   |   |   |   |   |   |   present_days <= 7:  FAIL (253.0/123.0)
+|   |   |   |   |   |   |   |   |   |   |   present_days > 7
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 16: PASS (124.0/60.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 16
+|   |   |   |   |   |   |   |   |   |   |   |   |   effective_time <= 40.308889:  FAIL (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   effective_time > 40.308889: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   user_enroll > 6
+|   |   |   |   |   |   |   |   |   |   |   wiki <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   page_close <= 34: PASS (18.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   page_close > 34
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 0:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 12:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 12: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   wiki > 2:  FAIL (5.0/1.0)
+|   |   |   |   |   |   |   |   |   present_days > 8
+|   |   |   |   |   |   |   |   |   |   wiki <= 2
+|   |   |   |   |   |   |   |   |   |   |   video <= 5: PASS (5.0)
+|   |   |   |   |   |   |   |   |   |   |   video > 5:  FAIL (70.0/23.0)
+|   |   |   |   |   |   |   |   |   |   wiki > 2
+|   |   |   |   |   |   |   |   |   |   |   navigate <= 30:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   navigate > 30: PASS (10.0/1.0)
+|   |   |   |   |   |   |   wiki > 6:  FAIL (41.0/11.0)
+|   |   |   |   |   |   Days Spent  > 17:  FAIL (492.0/170.0)
+|   |   |   |   present_days > 9
+|   |   |   |   |   Days Spent  <= 13
+|   |   |   |   |   |   present_days <= 12
+|   |   |   |   |   |   |   page_close <= 10:  FAIL (5.0)
+|   |   |   |   |   |   |   page_close > 10
+|   |   |   |   |   |   |   |   present_days <= 10: PASS (7.0/1.0)
+|   |   |   |   |   |   |   |   present_days > 10
+|   |   |   |   |   |   |   |   |   page_close <= 14: PASS (3.0)
+|   |   |   |   |   |   |   |   |   page_close > 14:  FAIL (5.0)
+|   |   |   |   |   |   present_days > 12: PASS (2.0)
+|   |   |   |   |   Days Spent  > 13:  FAIL (334.0/87.0)
+|   |   |   page_close > 51
+|   |   |   |   page_close <= 71
+|   |   |   |   |   access <= 136
+|   |   |   |   |   |   problem <= 11
+|   |   |   |   |   |   |   problem <= 8
+|   |   |   |   |   |   |   |   access <= 91:  FAIL (13.0)
+|   |   |   |   |   |   |   |   access > 91
+|   |   |   |   |   |   |   |   |   present_days <= 7: PASS (5.0/1.0)
+|   |   |   |   |   |   |   |   |   present_days > 7
+|   |   |   |   |   |   |   |   |   |   wiki <= 2:  FAIL (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   wiki > 2
+|   |   |   |   |   |   |   |   |   |   |   user_enroll <= 2: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   user_enroll > 2:  FAIL (3.0/1.0)
+|   |   |   |   |   |   |   problem > 8
+|   |   |   |   |   |   |   |   present_days <= 8
+|   |   |   |   |   |   |   |   |   present_days <= 7
+|   |   |   |   |   |   |   |   |   |   proccess_period <= 18.156042: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   proccess_period > 18.156042:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   present_days > 7:  FAIL (6.0/1.0)
+|   |   |   |   |   |   |   |   present_days > 8: PASS (9.0/1.0)
+|   |   |   |   |   |   problem > 11:  FAIL (224.0/34.0)
+|   |   |   |   |   access > 136
+|   |   |   |   |   |   Days Spent  <= 14
+|   |   |   |   |   |   |   page_close <= 64
+|   |   |   |   |   |   |   |   video <= 48
+|   |   |   |   |   |   |   |   |   problem <= 164:  FAIL (5.0/1.0)
+|   |   |   |   |   |   |   |   |   problem > 164: PASS (3.0)
+|   |   |   |   |   |   |   |   video > 48: PASS (9.0)
+|   |   |   |   |   |   |   page_close > 64
+|   |   |   |   |   |   |   |   navigate <= 40:  FAIL (7.0)
+|   |   |   |   |   |   |   |   navigate > 40: PASS (2.0)
+|   |   |   |   |   |   Days Spent  > 14
+|   |   |   |   |   |   |   wiki <= 7
+|   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   navigate <= 47
+|   |   |   |   |   |   |   |   |   |   navigate <= 20
+|   |   |   |   |   |   |   |   |   |   |   user_enroll <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 18:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 18
+|   |   |   |   |   |   |   |   |   |   |   |   |   access <= 167: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   access > 167:  FAIL (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   user_enroll > 3: PASS (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   navigate > 20:  FAIL (32.0/3.0)
+|   |   |   |   |   |   |   |   |   navigate > 47: PASS (6.0/1.0)
+|   |   |   |   |   |   |   |   wiki > 1
+|   |   |   |   |   |   |   |   |   user_enroll <= 4
+|   |   |   |   |   |   |   |   |   |   user_enroll <= 3
+|   |   |   |   |   |   |   |   |   |   |   page_close <= 58: PASS (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   page_close > 58
+|   |   |   |   |   |   |   |   |   |   |   |   present_days <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate <= 32:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   navigate > 32: PASS (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   present_days > 8:  FAIL (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   user_enroll > 3: PASS (4.0)
+|   |   |   |   |   |   |   |   |   user_enroll > 4:  FAIL (5.0)
+|   |   |   |   |   |   |   wiki > 7:  FAIL (6.0)
+|   |   |   |   page_close > 71
+|   |   |   |   |   problem <= 128:  FAIL (302.0/24.0)
+|   |   |   |   |   problem > 128
+|   |   |   |   |   |   problem <= 204
+|   |   |   |   |   |   |   discussion <= 19:  FAIL (7.0)
+|   |   |   |   |   |   |   discussion > 19
+|   |   |   |   |   |   |   |   proccess_period <= 12.318414:  FAIL (4.0)
+|   |   |   |   |   |   |   |   proccess_period > 12.318414
+|   |   |   |   |   |   |   |   |   wiki <= 12: PASS (20.0/5.0)
+|   |   |   |   |   |   |   |   |   wiki > 12:  FAIL (2.0)
+|   |   |   |   |   |   problem > 204:  FAIL (43.0/6.0)
+|   |   Days Spent  > 21
+|   |   |   access <= 73
+|   |   |   |   problem <= 12:  FAIL (490.0/166.0)
+|   |   |   |   problem > 12
+|   |   |   |   |   present_days <= 10
+|   |   |   |   |   |   video <= 9
+|   |   |   |   |   |   |   present_days <= 7
+|   |   |   |   |   |   |   |   video <= 3:  FAIL (52.0/6.0)
+|   |   |   |   |   |   |   |   video > 3
+|   |   |   |   |   |   |   |   |   proccess_period <= 24.014977:  FAIL (10.0)
+|   |   |   |   |   |   |   |   |   proccess_period > 24.014977
+|   |   |   |   |   |   |   |   |   |   access <= 47
+|   |   |   |   |   |   |   |   |   |   |   proccess_period <= 25.735926
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  <= 24: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Days Spent  > 24:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   proccess_period > 25.735926: PASS (7.0)
+|   |   |   |   |   |   |   |   |   |   access > 47
+|   |   |   |   |   |   |   |   |   |   |   wiki <= 2:  FAIL (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   wiki > 2: PASS (3.0/1.0)
+|   |   |   |   |   |   |   present_days > 7:  FAIL (130.0/16.0)
+|   |   |   |   |   |   video > 9
+|   |   |   |   |   |   |   page_close <= 26
+|   |   |   |   |   |   |   |   navigate <= 13
+|   |   |   |   |   |   |   |   |   video <= 13
+|   |   |   |   |   |   |   |   |   |   user_enroll <= 5
+|   |   |   |   |   |   |   |   |   |   |   page_close <= 19: PASS (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   page_close > 19:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   user_enroll > 5: PASS (3.0)
+|   |   |   |   |   |   |   |   |   video > 13: PASS (10.0)
+|   |   |   |   |   |   |   |   navigate > 13
+|   |   |   |   |   |   |   |   |   wiki <= 1
+|   |   |   |   |   |   |   |   |   |   effective_time <= 8.638333:  FAIL (21.0)
+|   |   |   |   |   |   |   |   |   |   effective_time > 8.638333
+|   |   |   |   |   |   |   |   |   |   |   user_enroll <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   present_days <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 20: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 20:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   present_days > 7:  FAIL (10.0)
+|   |   |   |   |   |   |   |   |   |   |   user_enroll > 3
+|   |   |   |   |   |   |   |   |   |   |   |   access <= 47:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   access > 47
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion <= 5: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   discussion > 5:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wiki > 0: PASS (3.0)
+|   |   |   |   |   |   |   |   |   wiki > 1
+|   |   |   |   |   |   |   |   |   |   user_enroll <= 2
+|   |   |   |   |   |   |   |   |   |   |   user_enroll <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   present_days <= 7:  FAIL (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   present_days > 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   present_days <= 9
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close <= 21: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   page_close > 21:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   present_days > 9: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   user_enroll > 1: PASS (8.0)
+|   |   |   |   |   |   |   |   |   |   user_enroll > 2:  FAIL (12.0/1.0)
+|   |   |   |   |   |   |   page_close > 26
+|   |   |   |   |   |   |   |   user_enroll <= 4:  FAIL (208.0/37.0)
+|   |   |   |   |   |   |   |   user_enroll > 4
+|   |   |   |   |   |   |   |   |   user_enroll <= 5
+|   |   |   |   |   |   |   |   |   |   discussion <= 7
+|   |   |   |   |   |   |   |   |   |   |   present_days <= 9
+|   |   |   |   |   |   |   |   |   |   |   |   page_close <= 35
+|   |   |   |   |   |   |   |   |   |   |   |   |   video <= 18:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   video > 18: PASS (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   page_close > 35:  FAIL (5.0)
+|   |   |   |   |   |   |   |   |   |   |   present_days > 9: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   discussion > 7: PASS (4.0)
+|   |   |   |   |   |   |   |   |   user_enroll > 5
+|   |   |   |   |   |   |   |   |   |   discussion <= 4
+|   |   |   |   |   |   |   |   |   |   |   wiki <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   page_close <= 34: PASS (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   page_close > 34
+|   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access <= 67: PASS (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   access > 67:  FAIL (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   user_enroll > 8:  FAIL (3.0)
+|   |   |   |   |   |   |   |   |   |   |   wiki > 2:  FAIL (2.0)
+|   |   |   |   |   |   |   |   |   |   discussion > 4:  FAIL (20.0/1.0)
+|   |   |   |   |   present_days > 10:  FAIL (147.0/11.0)
+|   |   |   access > 73:  FAIL (3581.0/386.0)
