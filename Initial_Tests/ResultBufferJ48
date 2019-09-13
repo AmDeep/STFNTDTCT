@@ -1,0 +1,374 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     TEST1-weka.filters.unsupervised.attribute.Remove-R1-6,9,12-13,15,18,23-26-weka.filters.unsupervised.attribute.Remove-R13-weka.filters.unsupervised.attribute.Remove-R4
+Instances:    2499
+Attributes:   11
+              weight
+              module_presentation_length
+              is_banked
+              gender
+              highest_education
+              imd_band
+              num_of_prev_attempts
+              studied_credits
+              disability
+              final_result
+              activity_type
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+num_of_prev_attempts <= 0
+|   studied_credits <= 60
+|   |   imd_band = 80-90%
+|   |   |   disability = N
+|   |   |   |   studied_credits <= 30
+|   |   |   |   |   weight <= 1: Distinction (9.0)
+|   |   |   |   |   weight > 1: Pass (7.4)
+|   |   |   |   studied_credits > 30: Pass (132.51/28.88)
+|   |   |   disability = Y: Fail (7.0)
+|   |   imd_band = 30-40%
+|   |   |   highest_education = HE Qualification
+|   |   |   |   module_presentation_length <= 261
+|   |   |   |   |   module_presentation_length <= 241: Pass (13.0/1.0)
+|   |   |   |   |   module_presentation_length > 241: Distinction (7.0)
+|   |   |   |   module_presentation_length > 261: Pass (17.96/0.96)
+|   |   |   highest_education = Lower Than A Level
+|   |   |   |   studied_credits <= 30: Pass (7.1)
+|   |   |   |   studied_credits > 30
+|   |   |   |   |   gender = M
+|   |   |   |   |   |   weight <= 10: Withdrawn (8.0)
+|   |   |   |   |   |   weight > 10: Fail (3.0)
+|   |   |   |   |   gender = F: Fail (15.0)
+|   |   |   highest_education = A Level or Equivalent
+|   |   |   |   studied_credits <= 30
+|   |   |   |   |   module_presentation_length <= 262: Pass (8.96)
+|   |   |   |   |   module_presentation_length > 262: Distinction (14.0)
+|   |   |   |   studied_credits > 30
+|   |   |   |   |   gender = M: Withdrawn (63.0/11.0)
+|   |   |   |   |   gender = F: Distinction (12.0)
+|   |   |   highest_education = Post Graduate Qualification: Pass (0.68)
+|   |   |   highest_education = No Formal quals: Withdrawn (0.0)
+|   |   imd_band = 90-100%
+|   |   |   highest_education = HE Qualification
+|   |   |   |   module_presentation_length <= 268: Pass (94.0)
+|   |   |   |   module_presentation_length > 268: Distinction (17.12/8.12)
+|   |   |   highest_education = Lower Than A Level: Pass (8.3)
+|   |   |   highest_education = A Level or Equivalent
+|   |   |   |   studied_credits <= 30: Pass (41.12/18.0)
+|   |   |   |   studied_credits > 30
+|   |   |   |   |   module_presentation_length <= 241: Fail (2.0)
+|   |   |   |   |   module_presentation_length > 241: Withdrawn (35.0/12.0)
+|   |   |   highest_education = Post Graduate Qualification: Pass (0.8)
+|   |   |   highest_education = No Formal quals: Pass (0.0)
+|   |   imd_band = 20-30%
+|   |   |   gender = M
+|   |   |   |   disability = N
+|   |   |   |   |   highest_education = HE Qualification: Pass (7.42/0.42)
+|   |   |   |   |   highest_education = Lower Than A Level
+|   |   |   |   |   |   studied_credits <= 30: Pass (3.15)
+|   |   |   |   |   |   studied_credits > 30: Withdrawn (18.0)
+|   |   |   |   |   highest_education = A Level or Equivalent: Withdrawn (4.42/1.42)
+|   |   |   |   |   highest_education = Post Graduate Qualification: Pass (0.3)
+|   |   |   |   |   highest_education = No Formal quals: Withdrawn (0.0)
+|   |   |   |   disability = Y: Fail (4.0)
+|   |   |   gender = F
+|   |   |   |   highest_education = HE Qualification
+|   |   |   |   |   module_presentation_length <= 268: Pass (5.0)
+|   |   |   |   |   module_presentation_length > 268: Distinction (5.0)
+|   |   |   |   highest_education = Lower Than A Level: Pass (17.0)
+|   |   |   |   highest_education = A Level or Equivalent
+|   |   |   |   |   module_presentation_length <= 241: Fail (2.0)
+|   |   |   |   |   module_presentation_length > 241: Pass (9.0)
+|   |   |   |   highest_education = Post Graduate Qualification: Pass (0.0)
+|   |   |   |   highest_education = No Formal quals: Pass (0.0)
+|   |   imd_band = 50-60%
+|   |   |   highest_education = HE Qualification: Distinction (85.05/1.05)
+|   |   |   highest_education = Lower Than A Level
+|   |   |   |   gender = M: Pass (19.81/3.0)
+|   |   |   |   gender = F
+|   |   |   |   |   weight <= 18: Withdrawn (21.0/1.0)
+|   |   |   |   |   weight > 18: Pass (4.0)
+|   |   |   highest_education = A Level or Equivalent
+|   |   |   |   module_presentation_length <= 241: Pass (27.05)
+|   |   |   |   module_presentation_length > 241
+|   |   |   |   |   module_presentation_length <= 268
+|   |   |   |   |   |   gender = M: Distinction (11.0)
+|   |   |   |   |   |   gender = F: Pass (5.0)
+|   |   |   |   |   module_presentation_length > 268: Pass (13.0)
+|   |   |   highest_education = Post Graduate Qualification: Pass (0.75)
+|   |   |   highest_education = No Formal quals: Distinction (0.0)
+|   |   imd_band = 20-Oct: Pass (65.76/3.37)
+|   |   imd_band = 40-50%
+|   |   |   module_presentation_length <= 262
+|   |   |   |   module_presentation_length <= 241: Pass (67.49/4.0)
+|   |   |   |   module_presentation_length > 241
+|   |   |   |   |   gender = M: Withdrawn (17.0)
+|   |   |   |   |   gender = F: Pass (10.0)
+|   |   |   module_presentation_length > 262
+|   |   |   |   gender = M
+|   |   |   |   |   module_presentation_length <= 268: Distinction (12.54/0.54)
+|   |   |   |   |   module_presentation_length > 268: Pass (9.66/0.76)
+|   |   |   |   gender = F: Pass (18.0/1.0)
+|   |   imd_band = 60-70%
+|   |   |   module_presentation_length <= 262
+|   |   |   |   highest_education = HE Qualification
+|   |   |   |   |   module_presentation_length <= 240: Withdrawn (26.0)
+|   |   |   |   |   module_presentation_length > 240: Distinction (15.0/6.0)
+|   |   |   |   highest_education = Lower Than A Level: Withdrawn (19.58/1.58)
+|   |   |   |   highest_education = A Level or Equivalent
+|   |   |   |   |   module_presentation_length <= 241: Pass (12.69)
+|   |   |   |   |   module_presentation_length > 241: Withdrawn (16.0)
+|   |   |   |   highest_education = Post Graduate Qualification: Withdrawn (0.0)
+|   |   |   |   highest_education = No Formal quals: Withdrawn (0.0)
+|   |   |   module_presentation_length > 262
+|   |   |   |   module_presentation_length <= 268: Fail (12.49/0.49)
+|   |   |   |   module_presentation_length > 268: Pass (21.26/7.69)
+|   |   imd_band = 70-80%
+|   |   |   studied_credits <= 30
+|   |   |   |   gender = M: Pass (10.32)
+|   |   |   |   gender = F: Fail (2.0)
+|   |   |   studied_credits > 30
+|   |   |   |   gender = M
+|   |   |   |   |   highest_education = HE Qualification: Fail (11.27)
+|   |   |   |   |   highest_education = Lower Than A Level
+|   |   |   |   |   |   module_presentation_length <= 268: Pass (5.0)
+|   |   |   |   |   |   module_presentation_length > 268: Fail (12.0)
+|   |   |   |   |   highest_education = A Level or Equivalent: Fail (6.0)
+|   |   |   |   |   highest_education = Post Graduate Qualification: Pass (0.2)
+|   |   |   |   |   highest_education = No Formal quals: Fail (0.0)
+|   |   |   |   gender = F: Withdrawn (2.0)
+|   |   imd_band = 0-10%
+|   |   |   module_presentation_length <= 240: Fail (9.0)
+|   |   |   module_presentation_length > 240
+|   |   |   |   highest_education = HE Qualification: Distinction (6.48/0.48)
+|   |   |   |   highest_education = Lower Than A Level
+|   |   |   |   |   studied_credits <= 30: Pass (48.55/18.0)
+|   |   |   |   |   studied_credits > 30
+|   |   |   |   |   |   module_presentation_length <= 262: Withdrawn (5.0/1.0)
+|   |   |   |   |   |   module_presentation_length > 262: Fail (3.0)
+|   |   |   |   highest_education = A Level or Equivalent: Pass (12.48)
+|   |   |   |   highest_education = Post Graduate Qualification: Pass (0.34)
+|   |   |   |   highest_education = No Formal quals: Pass (0.0)
+|   studied_credits > 60
+|   |   imd_band = 80-90%
+|   |   |   studied_credits <= 105
+|   |   |   |   module_presentation_length <= 241: Withdrawn (4.54/2.27)
+|   |   |   |   module_presentation_length > 241: Pass (12.0)
+|   |   |   studied_credits > 105
+|   |   |   |   module_presentation_length <= 240: Distinction (2.37/1.13)
+|   |   |   |   module_presentation_length > 240: Withdrawn (45.0)
+|   |   imd_band = 30-40%
+|   |   |   module_presentation_length <= 234: Fail (6.0)
+|   |   |   module_presentation_length > 234: Withdrawn (22.03/2.03)
+|   |   imd_band = 90-100%
+|   |   |   module_presentation_length <= 268
+|   |   |   |   module_presentation_length <= 241
+|   |   |   |   |   module_presentation_length <= 240: Distinction (3.16/1.51)
+|   |   |   |   |   module_presentation_length > 240: Withdrawn (30.05/3.02)
+|   |   |   |   module_presentation_length > 241: Pass (32.0/12.0)
+|   |   |   module_presentation_length > 268: Distinction (20.0/2.0)
+|   |   imd_band = 20-30%
+|   |   |   disability = N
+|   |   |   |   gender = M: Distinction (5.94/2.92)
+|   |   |   |   gender = F: Pass (46.0/1.0)
+|   |   |   disability = Y: Fail (3.0)
+|   |   imd_band = 50-60%
+|   |   |   highest_education = HE Qualification: Withdrawn (4.18/2.51)
+|   |   |   highest_education = Lower Than A Level: Distinction (23.0)
+|   |   |   highest_education = A Level or Equivalent
+|   |   |   |   module_presentation_length <= 241: Distinction (9.91)
+|   |   |   |   module_presentation_length > 241: Pass (10.0)
+|   |   |   highest_education = Post Graduate Qualification: Distinction (0.0)
+|   |   |   highest_education = No Formal quals: Distinction (0.0)
+|   |   imd_band = 20-Oct
+|   |   |   studied_credits <= 105
+|   |   |   |   studied_credits <= 70: Fail (7.0)
+|   |   |   |   studied_credits > 70: Withdrawn (108.97/54.48)
+|   |   |   studied_credits > 105
+|   |   |   |   gender = M
+|   |   |   |   |   module_presentation_length <= 241
+|   |   |   |   |   |   highest_education = HE Qualification: Pass (3.24)
+|   |   |   |   |   |   highest_education = Lower Than A Level: Pass (11.0)
+|   |   |   |   |   |   highest_education = A Level or Equivalent
+|   |   |   |   |   |   |   studied_credits <= 120: Distinction (15.54)
+|   |   |   |   |   |   |   studied_credits > 120: Pass (3.0)
+|   |   |   |   |   |   highest_education = Post Graduate Qualification: Pass (0.0)
+|   |   |   |   |   |   highest_education = No Formal quals: Pass (0.0)
+|   |   |   |   |   module_presentation_length > 241
+|   |   |   |   |   |   highest_education = HE Qualification: Distinction (0.0)
+|   |   |   |   |   |   highest_education = Lower Than A Level: Distinction (12.0)
+|   |   |   |   |   |   highest_education = A Level or Equivalent: Fail (4.0)
+|   |   |   |   |   |   highest_education = Post Graduate Qualification: Distinction (0.0)
+|   |   |   |   |   |   highest_education = No Formal quals: Distinction (0.0)
+|   |   |   |   gender = F: Fail (18.0)
+|   |   imd_band = 40-50%
+|   |   |   disability = N: Withdrawn (23.88/2.6)
+|   |   |   disability = Y: Fail (12.0)
+|   |   imd_band = 60-70%
+|   |   |   highest_education = HE Qualification
+|   |   |   |   module_presentation_length <= 240: Pass (12.82)
+|   |   |   |   module_presentation_length > 240: Distinction (12.26/1.63)
+|   |   |   highest_education = Lower Than A Level
+|   |   |   |   module_presentation_length <= 241: Fail (8.0)
+|   |   |   |   module_presentation_length > 241: Pass (12.0/1.0)
+|   |   |   highest_education = A Level or Equivalent: Distinction (0.89)
+|   |   |   highest_education = Post Graduate Qualification: Pass (0.0)
+|   |   |   highest_education = No Formal quals: Pass (0.0)
+|   |   imd_band = 70-80%
+|   |   |   gender = M
+|   |   |   |   disability = N: Distinction (14.45/2.69)
+|   |   |   |   disability = Y
+|   |   |   |   |   highest_education = HE Qualification: Withdrawn (0.0)
+|   |   |   |   |   highest_education = Lower Than A Level: Withdrawn (10.0)
+|   |   |   |   |   highest_education = A Level or Equivalent: Fail (10.0)
+|   |   |   |   |   highest_education = Post Graduate Qualification: Withdrawn (0.0)
+|   |   |   |   |   highest_education = No Formal quals: Withdrawn (0.0)
+|   |   |   gender = F: Pass (16.0)
+|   |   imd_band = 0-10%
+|   |   |   gender = M: Distinction (16.79/3.37)
+|   |   |   gender = F
+|   |   |   |   module_presentation_length <= 241: Fail (4.0)
+|   |   |   |   module_presentation_length > 241: Pass (5.0)
+num_of_prev_attempts > 0
+|   disability = N
+|   |   num_of_prev_attempts <= 1
+|   |   |   imd_band = 80-90%: Pass (32.0)
+|   |   |   imd_band = 30-40%
+|   |   |   |   module_presentation_length <= 268
+|   |   |   |   |   weight <= 7.5: Pass (37.0/4.0)
+|   |   |   |   |   weight > 7.5
+|   |   |   |   |   |   weight <= 17.5
+|   |   |   |   |   |   |   module_presentation_length <= 240
+|   |   |   |   |   |   |   |   studied_credits <= 90: Pass (4.0)
+|   |   |   |   |   |   |   |   studied_credits > 90: Fail (2.0)
+|   |   |   |   |   |   |   module_presentation_length > 240
+|   |   |   |   |   |   |   |   module_presentation_length <= 262: Withdrawn (26.0/6.0)
+|   |   |   |   |   |   |   |   module_presentation_length > 262: Fail (2.0)
+|   |   |   |   |   |   weight > 17.5
+|   |   |   |   |   |   |   gender = M
+|   |   |   |   |   |   |   |   highest_education = HE Qualification: Withdrawn (2.0)
+|   |   |   |   |   |   |   |   highest_education = Lower Than A Level: Fail (3.0)
+|   |   |   |   |   |   |   |   highest_education = A Level or Equivalent
+|   |   |   |   |   |   |   |   |   studied_credits <= 90: Pass (10.0)
+|   |   |   |   |   |   |   |   |   studied_credits > 90: Fail (2.0)
+|   |   |   |   |   |   |   |   highest_education = Post Graduate Qualification: Pass (0.0)
+|   |   |   |   |   |   |   |   highest_education = No Formal quals: Pass (0.0)
+|   |   |   |   |   |   |   gender = F: Pass (8.0)
+|   |   |   |   module_presentation_length > 268: Fail (12.0)
+|   |   |   imd_band = 90-100%
+|   |   |   |   gender = M
+|   |   |   |   |   highest_education = HE Qualification: Fail (0.0)
+|   |   |   |   |   highest_education = Lower Than A Level: Withdrawn (18.0)
+|   |   |   |   |   highest_education = A Level or Equivalent: Fail (22.0)
+|   |   |   |   |   highest_education = Post Graduate Qualification: Fail (0.0)
+|   |   |   |   |   highest_education = No Formal quals: Fail (0.0)
+|   |   |   |   gender = F: Pass (12.0)
+|   |   |   imd_band = 20-30%: Pass (18.0)
+|   |   |   imd_band = 50-60%
+|   |   |   |   gender = M: Fail (4.0)
+|   |   |   |   gender = F: Pass (20.0)
+|   |   |   imd_band = 20-Oct
+|   |   |   |   module_presentation_length <= 240
+|   |   |   |   |   gender = M: Pass (12.0)
+|   |   |   |   |   gender = F: Withdrawn (5.0)
+|   |   |   |   module_presentation_length > 240: Withdrawn (56.0)
+|   |   |   imd_band = 40-50%
+|   |   |   |   studied_credits <= 105
+|   |   |   |   |   module_presentation_length <= 241: Pass (18.0)
+|   |   |   |   |   module_presentation_length > 241
+|   |   |   |   |   |   highest_education = HE Qualification: Pass (14.0)
+|   |   |   |   |   |   highest_education = Lower Than A Level: Pass (0.0)
+|   |   |   |   |   |   highest_education = A Level or Equivalent: Fail (13.0)
+|   |   |   |   |   |   highest_education = Post Graduate Qualification: Pass (0.0)
+|   |   |   |   |   |   highest_education = No Formal quals: Pass (0.0)
+|   |   |   |   studied_credits > 105: Withdrawn (2.0)
+|   |   |   imd_band = 60-70%
+|   |   |   |   highest_education = HE Qualification: Pass (32.0)
+|   |   |   |   highest_education = Lower Than A Level
+|   |   |   |   |   gender = M: Withdrawn (16.0)
+|   |   |   |   |   gender = F: Pass (11.0)
+|   |   |   |   highest_education = A Level or Equivalent: Pass (11.0)
+|   |   |   |   highest_education = Post Graduate Qualification: Pass (0.0)
+|   |   |   |   highest_education = No Formal quals: Pass (0.0)
+|   |   |   imd_band = 70-80%
+|   |   |   |   module_presentation_length <= 241: Fail (5.0)
+|   |   |   |   module_presentation_length > 241: Withdrawn (2.0)
+|   |   |   imd_band = 0-10%: Pass (0.0)
+|   |   num_of_prev_attempts > 1
+|   |   |   studied_credits <= 120
+|   |   |   |   imd_band = 80-90%: Pass (8.0/1.0)
+|   |   |   |   imd_band = 30-40%: Fail (0.0)
+|   |   |   |   imd_band = 90-100%: Fail (18.0)
+|   |   |   |   imd_band = 20-30%: Withdrawn (8.0/4.0)
+|   |   |   |   imd_band = 50-60%: Fail (0.0)
+|   |   |   |   imd_band = 20-Oct: Fail (9.0)
+|   |   |   |   imd_band = 40-50%: Fail (13.0)
+|   |   |   |   imd_band = 60-70%: Fail (0.0)
+|   |   |   |   imd_band = 70-80%: Fail (0.0)
+|   |   |   |   imd_band = 0-10%
+|   |   |   |   |   highest_education = HE Qualification: Fail (0.0)
+|   |   |   |   |   highest_education = Lower Than A Level: Fail (12.0)
+|   |   |   |   |   highest_education = A Level or Equivalent: Pass (10.0/1.0)
+|   |   |   |   |   highest_education = Post Graduate Qualification: Fail (0.0)
+|   |   |   |   |   highest_education = No Formal quals: Fail (0.0)
+|   |   |   studied_credits > 120: Withdrawn (22.0)
+|   disability = Y
+|   |   num_of_prev_attempts <= 2
+|   |   |   highest_education = HE Qualification: Withdrawn (0.0)
+|   |   |   highest_education = Lower Than A Level: Withdrawn (36.0)
+|   |   |   highest_education = A Level or Equivalent
+|   |   |   |   imd_band = 80-90%: Fail (0.0)
+|   |   |   |   imd_band = 30-40%: Fail (0.0)
+|   |   |   |   imd_band = 90-100%: Fail (0.0)
+|   |   |   |   imd_band = 20-30%: Fail (0.0)
+|   |   |   |   imd_band = 50-60%: Withdrawn (17.0/3.0)
+|   |   |   |   imd_band = 20-Oct: Fail (0.0)
+|   |   |   |   imd_band = 40-50%: Fail (0.0)
+|   |   |   |   imd_band = 60-70%: Fail (14.0)
+|   |   |   |   imd_band = 70-80%: Fail (0.0)
+|   |   |   |   imd_band = 0-10%: Fail (0.0)
+|   |   |   highest_education = Post Graduate Qualification: Withdrawn (0.0)
+|   |   |   highest_education = No Formal quals: Withdrawn (0.0)
+|   |   num_of_prev_attempts > 2: Fail (38.0)
+
+Number of Leaves  : 	206
+
+Size of the tree : 	314
+
+
+Time taken to build model: 0.27 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2211               88.4754 %
+Incorrectly Classified Instances       288               11.5246 %
+Kappa statistic                          0.8315
+Mean absolute error                      0.0762
+Root mean squared error                  0.1993
+Relative absolute error                 21.9308 %
+Root relative squared error             47.8353 %
+Total Number of Instances             2499     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.977    0.099    0.883      0.977    0.928      0.871    0.977     0.962     Pass
+                 0.793    0.050    0.854      0.793    0.822      0.760    0.960     0.912     Withdrawn
+                 0.912    0.008    0.947      0.912    0.929      0.918    0.979     0.954     Fail
+                 0.762    0.018    0.886      0.762    0.819      0.792    0.986     0.942     Distinction
+Weighted Avg.    0.885    0.061    0.885      0.885    0.883      0.835    0.974     0.944     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 1060   20    2    3 |    a = Pass
+   92  536   16   32 |    b = Withdrawn
+   19    9  320    3 |    c = Fail
+   29   63    0  295 |    d = Distinction
+

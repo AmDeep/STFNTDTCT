@@ -1,0 +1,619 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.PART -M 2 -C 0.25 -Q 1
+Relation:     TEST1-weka.filters.unsupervised.attribute.Remove-R1-6,9,12-13,15,18,23-26-weka.filters.unsupervised.attribute.Remove-R13-weka.filters.unsupervised.attribute.Remove-R4
+Instances:    2499
+Attributes:   11
+              weight
+              module_presentation_length
+              is_banked
+              gender
+              highest_education
+              imd_band
+              num_of_prev_attempts
+              studied_credits
+              disability
+              final_result
+              activity_type
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+PART decision list
+------------------
+
+is_banked > 0 AND
+num_of_prev_attempts <= 0: Withdrawn (52.0)
+
+num_of_prev_attempts > 0 AND
+disability = Y AND
+num_of_prev_attempts <= 2 AND
+num_of_prev_attempts > 1: Withdrawn (39.0)
+
+disability = Y AND
+module_presentation_length <= 262 AND
+studied_credits > 30 AND
+weight > 0 AND
+num_of_prev_attempts > 2: Fail (36.0)
+
+num_of_prev_attempts > 0 AND
+num_of_prev_attempts > 1 AND
+studied_credits > 120: Withdrawn (22.0)
+
+num_of_prev_attempts > 0 AND
+num_of_prev_attempts > 1 AND
+imd_band = 90-100%: Fail (18.0)
+
+num_of_prev_attempts > 0 AND
+module_presentation_length > 268 AND
+gender = M: Fail (37.0)
+
+num_of_prev_attempts > 0 AND
+imd_band = 80-90%: Pass (40.0/1.0)
+
+num_of_prev_attempts > 0 AND
+disability = Y AND
+highest_education = A Level or Equivalent: Fail (17.0)
+
+num_of_prev_attempts > 0 AND
+num_of_prev_attempts > 1 AND
+highest_education = Lower Than A Level AND
+module_presentation_length <= 241: Fail (15.0)
+
+num_of_prev_attempts > 0 AND
+imd_band = 50-60% AND
+gender = F: Pass (20.0)
+
+num_of_prev_attempts > 0 AND
+imd_band = 60-70% AND
+highest_education = HE Qualification: Pass (32.0)
+
+num_of_prev_attempts > 0 AND
+highest_education = A Level or Equivalent AND
+module_presentation_length <= 241 AND
+imd_band = 30-40% AND
+studied_credits <= 90: Pass (38.0)
+
+num_of_prev_attempts > 0 AND
+imd_band = 70-80% AND
+module_presentation_length > 234: Withdrawn (12.0)
+
+num_of_prev_attempts > 0 AND
+imd_band = 20-30% AND
+gender = M: Pass (18.0)
+
+num_of_prev_attempts > 0 AND
+imd_band = 60-70% AND
+gender = F: Pass (22.0)
+
+num_of_prev_attempts > 0 AND
+imd_band = 20-Oct AND
+num_of_prev_attempts <= 1 AND
+module_presentation_length > 240: Withdrawn (56.0)
+
+num_of_prev_attempts > 0 AND
+is_banked > 0 AND
+imd_band = 30-40%: Withdrawn (14.0)
+
+imd_band = 80-90% AND
+disability = N AND
+studied_credits > 105 AND
+module_presentation_length > 240: Withdrawn (45.0)
+
+imd_band = 80-90% AND
+disability = N AND
+studied_credits > 30 AND
+module_presentation_length > 241: Pass (76.04/0.61)
+
+num_of_prev_attempts > 0 AND
+imd_band = 40-50% AND
+studied_credits <= 120 AND
+module_presentation_length <= 262 AND
+highest_education = HE Qualification: Pass (18.0)
+
+num_of_prev_attempts > 0 AND
+gender = F AND
+imd_band = 90-100%: Pass (12.0)
+
+num_of_prev_attempts > 0 AND
+gender = F AND
+imd_band = 30-40% AND
+module_presentation_length > 241: Pass (11.0)
+
+num_of_prev_attempts > 0 AND
+module_presentation_length > 241 AND
+module_presentation_length > 262 AND
+studied_credits <= 105: Fail (23.0)
+
+imd_band = 20-30% AND
+gender = F AND
+num_of_prev_attempts <= 1 AND
+module_presentation_length <= 268 AND
+studied_credits > 30: Pass (59.0/1.0)
+
+studied_credits <= 60 AND
+imd_band = 20-Oct AND
+num_of_prev_attempts <= 0 AND
+highest_education = A Level or Equivalent: Pass (33.42/1.0)
+
+studied_credits <= 30 AND
+highest_education = Lower Than A Level AND
+weight <= 1 AND
+module_presentation_length <= 241: Pass (44.0)
+
+imd_band = 50-60% AND
+highest_education = HE Qualification: Distinction (92.42/5.4)
+
+studied_credits <= 60 AND
+imd_band = 70-80% AND
+studied_credits <= 30 AND
+gender = M: Pass (11.08)
+
+studied_credits <= 60 AND
+imd_band = 70-80% AND
+gender = M AND
+studied_credits > 30 AND
+highest_education = Lower Than A Level AND
+module_presentation_length > 268: Fail (12.0)
+
+disability = Y AND
+module_presentation_length <= 268 AND
+imd_band = 40-50%: Fail (12.0)
+
+studied_credits <= 60 AND
+imd_band = 70-80% AND
+module_presentation_length <= 262: Fail (24.7/0.7)
+
+studied_credits <= 60 AND
+highest_education = HE Qualification AND
+module_presentation_length <= 240 AND
+imd_band = 80-90%: Pass (48.0/24.0)
+
+studied_credits <= 60 AND
+highest_education = HE Qualification AND
+imd_band = 90-100% AND
+module_presentation_length <= 268: Pass (94.0)
+
+studied_credits <= 60 AND
+studied_credits <= 50 AND
+highest_education = Lower Than A Level AND
+disability = N AND
+imd_band = 0-10% AND
+activity_type = resource AND
+module_presentation_length > 241 AND
+module_presentation_length > 268: Pass (28.79/9.0)
+
+module_presentation_length > 268 AND
+studied_credits > 70 AND
+gender = M AND
+highest_education = Lower Than A Level: Distinction (25.0/1.0)
+
+disability = Y AND
+module_presentation_length <= 262 AND
+imd_band = 60-70%: Withdrawn (8.0)
+
+disability = Y AND
+module_presentation_length <= 262 AND
+highest_education = A Level or Equivalent: Fail (19.0)
+
+num_of_prev_attempts > 0 AND
+module_presentation_length > 241 AND
+num_of_prev_attempts <= 1 AND
+highest_education = Lower Than A Level: Withdrawn (29.0)
+
+studied_credits <= 60 AND
+studied_credits <= 50 AND
+highest_education = Lower Than A Level AND
+disability = N AND
+imd_band = 20-Oct: Pass (17.1)
+
+studied_credits <= 60 AND
+studied_credits <= 50 AND
+highest_education = Lower Than A Level AND
+disability = N AND
+imd_band = 20-30%: Pass (15.2)
+
+imd_band = 80-90% AND
+module_presentation_length <= 241: Pass (21.85/5.25)
+
+imd_band = 40-50% AND
+studied_credits > 70 AND
+module_presentation_length > 240: Withdrawn (27.08/2.54)
+
+imd_band = 40-50% AND
+num_of_prev_attempts > 0 AND
+module_presentation_length <= 241: Pass (15.0/1.0)
+
+imd_band = 40-50% AND
+num_of_prev_attempts <= 0 AND
+module_presentation_length <= 262 AND
+studied_credits <= 70 AND
+module_presentation_length <= 241 AND
+activity_type = resource: Pass (42.21/1.0)
+
+highest_education = Post Graduate Qualification AND
+module_presentation_length > 268: Distinction (9.0)
+
+highest_education = A Level or Equivalent AND
+imd_band = 0-10% AND
+gender = F: Pass (21.0)
+
+imd_band = 70-80% AND
+disability = N AND
+highest_education = A Level or Equivalent: Pass (16.71/0.49)
+
+imd_band = 50-60% AND
+num_of_prev_attempts <= 0 AND
+highest_education = A Level or Equivalent AND
+gender = F: Pass (25.0)
+
+imd_band = 80-90%: Distinction (9.8/0.55)
+
+num_of_prev_attempts > 0 AND
+studied_credits <= 105 AND
+module_presentation_length <= 241: Withdrawn (13.0)
+
+num_of_prev_attempts > 0 AND
+module_presentation_length > 241 AND
+imd_band = 20-Oct: Fail (9.0)
+
+highest_education = HE Qualification AND
+imd_band = 70-80%: Distinction (10.93/1.27)
+
+imd_band = 70-80% AND
+disability = Y: Withdrawn (11.0/1.0)
+
+imd_band = 70-80% AND
+gender = M: Pass (5.63/0.35)
+
+highest_education = HE Qualification AND
+gender = F AND
+imd_band = 60-70%: Distinction (9.0)
+
+imd_band = 90-100% AND
+studied_credits <= 30 AND
+highest_education = A Level or Equivalent AND
+activity_type = subpage: Pass (4.0/1.0)
+
+imd_band = 90-100% AND
+studied_credits <= 30 AND
+highest_education = Lower Than A Level: Pass (3.1)
+
+imd_band = 90-100% AND
+studied_credits <= 30 AND
+highest_education = A Level or Equivalent AND
+activity_type = url AND
+weight > 10: Pass (3.0)
+
+imd_band = 90-100% AND
+studied_credits <= 30: Pass (36.34/17.0)
+
+imd_band = 90-100% AND
+studied_credits <= 240 AND
+module_presentation_length <= 261 AND
+gender = M AND
+module_presentation_length > 240: Withdrawn (28.93/3.06)
+
+studied_credits > 105 AND
+highest_education = HE Qualification AND
+module_presentation_length <= 268: Pass (13.72)
+
+studied_credits <= 60 AND
+disability = Y AND
+highest_education = Lower Than A Level AND
+gender = F: Fail (13.0)
+
+num_of_prev_attempts > 0 AND
+imd_band = 20-Oct AND
+gender = M: Pass (12.0)
+
+studied_credits <= 60 AND
+highest_education = Lower Than A Level AND
+module_presentation_length <= 262 AND
+studied_credits > 30 AND
+imd_band = 20-30%: Withdrawn (20.0)
+
+studied_credits <= 60 AND
+num_of_prev_attempts > 0 AND
+highest_education = A Level or Equivalent: Fail (8.0)
+
+studied_credits <= 60 AND
+imd_band = 20-Oct AND
+module_presentation_length > 241: Pass (10.44/0.13)
+
+studied_credits <= 60 AND
+weight > 18 AND
+gender = F AND
+imd_band = 60-70%: Pass (15.0/4.0)
+
+studied_credits <= 60 AND
+imd_band = 40-50% AND
+module_presentation_length <= 262 AND
+gender = M AND
+module_presentation_length <= 241 AND
+weight > 12.5: Pass (12.03)
+
+studied_credits <= 60 AND
+imd_band = 40-50% AND
+gender = F: Pass (28.0/1.0)
+
+studied_credits <= 105 AND
+studied_credits > 70 AND
+module_presentation_length <= 240 AND
+module_presentation_length > 234: Pass (12.0)
+
+studied_credits <= 60 AND
+imd_band = 50-60% AND
+highest_education = Lower Than A Level AND
+weight <= 18: Withdrawn (24.86/1.86)
+
+imd_band = 50-60% AND
+num_of_prev_attempts <= 0 AND
+studied_credits > 70: Distinction (24.63/2.28)
+
+imd_band = 50-60% AND
+num_of_prev_attempts <= 0 AND
+studied_credits <= 70 AND
+highest_education = A Level or Equivalent AND
+module_presentation_length <= 241: Pass (16.23)
+
+studied_credits <= 105 AND
+studied_credits > 70 AND
+module_presentation_length > 234 AND
+imd_band = 20-Oct AND
+activity_type = resource AND
+gender = F AND
+module_presentation_length <= 268: Distinction (32.0/14.0)
+
+studied_credits <= 105 AND
+studied_credits > 70 AND
+module_presentation_length > 234: Withdrawn (96.79/42.9)
+
+gender = F AND
+imd_band = 20-Oct AND
+num_of_prev_attempts <= 0: Fail (25.0)
+
+imd_band = 50-60% AND
+num_of_prev_attempts <= 0 AND
+module_presentation_length > 268: Pass (12.74/0.29)
+
+imd_band = 50-60% AND
+num_of_prev_attempts <= 0 AND
+highest_education = A Level or Equivalent: Distinction (11.48/0.11)
+
+imd_band = 50-60% AND
+num_of_prev_attempts <= 0: Pass (4.51/0.22)
+
+imd_band = 40-50% AND
+module_presentation_length <= 262: Withdrawn (16.02/2.02)
+
+imd_band = 40-50% AND
+module_presentation_length <= 268: Distinction (12.67/0.37)
+
+imd_band = 20-Oct AND
+module_presentation_length > 241 AND
+highest_education = Lower Than A Level: Distinction (12.68/0.68)
+
+highest_education = Lower Than A Level AND
+imd_band = 20-Oct AND
+module_presentation_length > 240: Pass (14.21/2.0)
+
+highest_education = Lower Than A Level AND
+module_presentation_length <= 262 AND
+module_presentation_length > 241 AND
+imd_band = 60-70%: Withdrawn (16.0)
+
+highest_education = Lower Than A Level AND
+module_presentation_length <= 261 AND
+studied_credits > 30 AND
+imd_band = 60-70%: Fail (8.0)
+
+highest_education = Lower Than A Level AND
+imd_band = 60-70%: Pass (15.42/2.0)
+
+highest_education = Lower Than A Level AND
+imd_band = 30-40% AND
+gender = F: Fail (11.0)
+
+highest_education = Lower Than A Level AND
+imd_band = 20-30%: Fail (5.6/1.6)
+
+highest_education = Lower Than A Level AND
+module_presentation_length > 261 AND
+disability = N AND
+module_presentation_length > 268 AND
+weight > 4: Pass (15.91)
+
+highest_education = Lower Than A Level AND
+studied_credits > 30 AND
+disability = N AND
+imd_band = 0-10%: Fail (7.0)
+
+highest_education = Post Graduate Qualification: Pass (4.16)
+
+imd_band = 20-Oct AND
+module_presentation_length <= 241 AND
+gender = M AND
+studied_credits <= 120: Distinction (12.74/0.27)
+
+studied_credits > 160 AND
+module_presentation_length > 241: Distinction (9.0)
+
+highest_education = Lower Than A Level AND
+studied_credits > 30 AND
+studied_credits <= 160 AND
+imd_band = 0-10%: Withdrawn (4.0)
+
+highest_education = Lower Than A Level AND
+studied_credits <= 30: Pass (20.48/9.0)
+
+studied_credits <= 50 AND
+module_presentation_length > 262: Distinction (19.0)
+
+highest_education = Lower Than A Level AND
+gender = M AND
+module_presentation_length <= 241: Fail (4.0)
+
+highest_education = Lower Than A Level AND
+gender = F: Withdrawn (4.0)
+
+module_presentation_length <= 240 AND
+studied_credits > 70 AND
+module_presentation_length > 234 AND
+num_of_prev_attempts <= 0: Distinction (8.07)
+
+highest_education = Lower Than A Level AND
+weight > 10: Fail (3.0)
+
+highest_education = A Level or Equivalent AND
+module_presentation_length > 240 AND
+imd_band = 30-40% AND
+studied_credits > 30 AND
+num_of_prev_attempts <= 0: Withdrawn (30.0/1.0)
+
+module_presentation_length <= 240 AND
+studied_credits <= 70 AND
+gender = M AND
+highest_education = HE Qualification: Withdrawn (26.0)
+
+highest_education = HE Qualification AND
+num_of_prev_attempts <= 0 AND
+imd_band = 30-40% AND
+module_presentation_length > 261: Pass (19.1/2.1)
+
+highest_education = HE Qualification AND
+num_of_prev_attempts <= 0 AND
+imd_band = 20-30%: Pass (7.28/0.28)
+
+highest_education = HE Qualification AND
+num_of_prev_attempts <= 0 AND
+weight > 1 AND
+weight > 10 AND
+gender = M AND
+activity_type = resource AND
+weight <= 22: Distinction (10.0/1.0)
+
+highest_education = HE Qualification AND
+num_of_prev_attempts <= 0 AND
+imd_band = 0-10%: Distinction (6.29/0.29)
+
+highest_education = HE Qualification AND
+num_of_prev_attempts <= 0 AND
+imd_band = 60-70% AND
+activity_type = oucontent AND
+weight <= 15: Withdrawn (6.09/2.09)
+
+highest_education = HE Qualification AND
+num_of_prev_attempts <= 0 AND
+imd_band = 30-40% AND
+module_presentation_length <= 241: Pass (13.0/1.0)
+
+highest_education = HE Qualification AND
+num_of_prev_attempts <= 0 AND
+studied_credits <= 90 AND
+module_presentation_length <= 262: Distinction (10.0/2.0)
+
+imd_band = 20-Oct AND
+module_presentation_length > 241: Fail (4.07)
+
+module_presentation_length <= 234: Fail (6.0)
+
+imd_band = 20-30% AND
+module_presentation_length > 241: Withdrawn (4.06/1.06)
+
+imd_band = 60-70% AND
+module_presentation_length <= 262 AND
+module_presentation_length <= 241: Pass (9.38)
+
+imd_band = 60-70% AND
+module_presentation_length > 262 AND
+module_presentation_length <= 268: Fail (12.0)
+
+highest_education = A Level or Equivalent AND
+module_presentation_length > 240 AND
+imd_band = 30-40% AND
+weight <= 9: Pass (15.28)
+
+imd_band = 90-100% AND
+highest_education = A Level or Equivalent AND
+module_presentation_length > 241 AND
+activity_type = subpage AND
+module_presentation_length > 262: Pass (7.0/1.0)
+
+studied_credits > 90 AND
+module_presentation_length > 240 AND
+highest_education = A Level or Equivalent AND
+studied_credits <= 120 AND
+activity_type = resource AND
+imd_band = 90-100%: Pass (17.0/7.0)
+
+gender = M AND
+num_of_prev_attempts > 0 AND
+module_presentation_length > 241: Withdrawn (6.0)
+
+highest_education = A Level or Equivalent AND
+gender = M AND
+num_of_prev_attempts <= 0 AND
+activity_type = resource: Pass (25.58/10.0)
+
+studied_credits > 90 AND
+module_presentation_length > 240 AND
+weight > 10: Pass (15.0/4.0)
+
+gender = F AND
+module_presentation_length <= 240: Distinction (13.0/1.0)
+
+module_presentation_length <= 268 AND
+num_of_prev_attempts > 0 AND
+module_presentation_length <= 240: Fail (4.0)
+
+module_presentation_length <= 268 AND
+gender = M: Withdrawn (21.32/4.32)
+
+studied_credits > 90: Withdrawn (5.0)
+
+module_presentation_length <= 262 AND
+module_presentation_length <= 241: Fail (4.0)
+
+module_presentation_length <= 262: Withdrawn (3.0)
+
+highest_education = HE Qualification AND
+activity_type = resource AND
+weight > 9: Pass (3.0/1.0)
+
+: Distinction (13.82/7.82)
+
+Number of Rules  : 	128
+
+
+Time taken to build model: 0.77 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2192               87.7151 %
+Incorrectly Classified Instances       307               12.2849 %
+Kappa statistic                          0.822 
+Mean absolute error                      0.073 
+Root mean squared error                  0.1983
+Relative absolute error                 21.0261 %
+Root relative squared error             47.5761 %
+Total Number of Instances             2499     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.940    0.084    0.896      0.940    0.917      0.852    0.982     0.973     Pass
+                 0.797    0.055    0.844      0.797    0.820      0.756    0.964     0.919     Withdrawn
+                 0.917    0.009    0.944      0.917    0.931      0.920    0.980     0.961     Fail
+                 0.804    0.033    0.818      0.804    0.811      0.777    0.981     0.902     Distinction
+Weighted Avg.    0.877    0.058    0.876      0.877    0.876      0.824    0.977     0.946     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 1020   39    3   23 |    a = Pass
+   80  539   16   41 |    b = Withdrawn
+   13   11  322    5 |    c = Fail
+   26   50    0  311 |    d = Distinction
+
