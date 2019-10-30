@@ -1,0 +1,144 @@
+---
+title: "TWDATA"
+author: "Amardeep Singh"
+date: "October 3, 2018"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(error = TRUE)
+```
+```{r}
+
+files <- list.files("D:\\A_DS\\anonymisedData\\PHNE")
+fileName <- glue("D:\\A_DS\\anonymisedData\\PHNE\\", files[1], sep = "")
+fileText <- glue(read_file(fileName))
+tokens <- data_frame(text = fileText) %>% unnest_tokens(word, text)
+
+tokens %>%
+  inner_join(get_sentiments("bing")) %>% # pull out only sentiment words
+  count(sentiment) %>% # count the # of positive & negative words
+  spread(sentiment, n, fill = 0) %>% # made data wide rather than narrow
+  mutate(sentiment = positive - negative) # # of positive words - # of negative owrds
+``` 
+
+
+
+
+```{r}
+ install.packages("installr") 
+ library(installr) 
+ check.for.updates.R()
+ install.R()
+```
+
+```{r}
+install.packages("glue")
+install.packages("SnowballC")
+install.packages("wordcloud")
+install.packages("ggplot2")
+```
+```{r}
+install.packages("tm")
+```
+
+```{r}
+
+slam_url <- "https://cran.r-project.org/src/contrib/Archive/slam/slam_0.1-37.tar.gz"
+install_url(slam_url)
+```
+```{r}
+install.packages('tm',dependencies = TRUE)
+install.packages('NLP',dependencies = TRUE)
+```
+```{r}
+cname <- file.path("D:\\A_DS\\anonymisedData", "New foolder")   
+cname   
+dir(cname)   
+```
+
+```{r}
+library("tm")
+doc <- VCorpus(DirSource(cname))   
+summary(doc) 
+```
+
+
+```{r}
+install.packages("readr")
+```
+
+```{r}
+inspect(docs[1])
+writeLines(as.character(docs[1]))
+```
+```{r}
+library(tm)
+sentiment <- analyzeSentiment(doc)
+```
+
+```{r}
+doc <- tm_map(doc, removePunctuation)
+doc <- tm_map(doc, removeNumbers)
+doc <- tm_map(doc, tolower)
+doc <- tm_map(doc, removeWords, stopwords("english"))
+doc <- tm_map(doc, stripWhitespace)
+library(SnowballC)
+doc <- tm_map(doc, stemDocument)
+```
+
+```{r}
+SentimentAnalysis::analyzeSentiment(doc)
+```
+
+```{r}
+doc <- tm_map(doc, PlainTextDocument)
+dtm<- DocumentTermMatrix(doc)
+dtm
+```
+
+```{r}
+length(Ccont)
+length(lines)
+
+```
+```{r}
+freq <- colSums(as.matrix(dtm))   
+length(freq)   
+```
+
+```{r}
+#create sort order (descending)
+ord <- order(freq,decreasing=TRUE)
+freq[head(ord)]
+freq[tail(ord)]
+```
+
+
+```{r}
+findFreqTerms(dtm,lowfreq=10)
+```
+
+
+```{r}
+dtm <- TermDocumentMatrix(doc)
+m <- as.matrix(dtm)
+v <- sort(rowSums(m),decreasing=TRUE)
+d <- data.frame(word = names(v),freq=v)
+d
+```
+
+```{r}
+library(wordcloud)
+wordcloud(names(d),freq,min.freq=10)
+```
+The same world cloud is created but with color formats for easier differentiation and interpretation. 
+```{r}
+set.seed(1234)
+wordcloud(words = d$word, freq = d$freq, min.freq = 100,
+          max.words=200, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+```
+
